@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Puntodos {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("digite su calificacion");
+        int calificacion = scanner.nextInt();
+        if (calificacion < 1 || calificacion > 10) {
+            System.out.println("Número no válido, por favor verifique");
+        } else
+            switch (calificacion) {
+                case 1:
+                case 2:
+                    System.out.println("su calificacion es F");
+                    break;
+                case 3:
+                case 4:
+                    System.out.println("su calificacion es D");
+                    break;
+                case 5:
+                case 6:
+                    System.out.println("su calificacion es C");
+                    break;
+                case 7:
+                case 8:
+                    System.out.println("su calificacion es B");
+                    break;
+                case 9:
+                case 10:
+                    System.out.println("su calificacion es A");
+                    break;
+
+            }
+
+    }
+}
+
